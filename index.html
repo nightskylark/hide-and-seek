@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+   <title>Прятки</title>  
+   <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="./favicon.ico">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://res.cloudinary.com/positionrelativ/raw/upload/v1492377595/jquery.rwdImageMaps_lq5sye.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+
+            <img class="img" src="./img/closed.jpg" usemap="#image-map">
+
+            <img class="img cover hidden empty closet" src="./img/empty_closet.png" usemap="#image-map">
+            <img class="img cover hidden empty tent" src="./img/empty_tent.png" usemap="#image-map">
+            <img class="img cover hidden empty window" src="./img/empty_window.png" usemap="#image-map">
+            <img class="img cover hidden empty slide" src="./img/empty_slide.png" usemap="#image-map">
+            <img class="img cover hidden empty sofa" src="./img/empty_sofa.png" usemap="#image-map">
+
+            
+            <img class="img cover hidden found closet" src="./img/found_closet.png" usemap="#image-map">
+            <img class="img cover hidden found tent" src="./img/found_tent.png" usemap="#image-map">
+            <img class="img cover hidden found window" src="./img/found_window.png" usemap="#image-map">
+            <img class="img cover hidden found slide" src="./img/found_slide.png" usemap="#image-map">
+            <img class="img cover hidden found sofa" src="./img/found_sofa.png" usemap="#image-map">
+
+            <map name="image-map" class="img cover">
+                <area alt="tent" title="tent" href="#" coords="2374,1944,602" shape="circle">
+                <area alt="window" title="window" href="#" coords="3534,98,4048,367,4059,1921,3502,1367" shape="poly">
+                <area alt="slide" title="slide" href="#" coords="443,1784,806,1331,810,1205,835,1137,860,702,720,666,494,824,418,1007,386,1291,350,1464,278,1579,134,1766,382,1831" shape="poly">
+                <area alt="sofa" title="sofa" href="#" coords="835,1460,817,1216,997,1072,1015,1040,1022,928,1065,874,2140,838,2168,925,2190,1000,2197,1234,2190,1309,2086,1374,2050,1410,1992,1381,1022,1464,921,1493,850,1489" shape="poly">
+                <area alt="closet" title="closet" href="#" coords="2456,1335,2445,281,2499,209,3218,224,3279,288,3336,1489,2794,1475,2668,1403" shape="poly">
+            </map>
+        </div>
+    </div>
+
+    <div class="reload hidden"></div>
+
+    <div id="button" class="img" onclick="this.remove();"></div>
+    <script src="./run.js"></script>
+</body>
+</html>
